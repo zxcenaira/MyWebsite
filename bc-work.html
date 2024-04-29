@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BC - Work</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+      @media print {
+      .noPrint {
+          display:none;
+        }
+
+        .noPrintBorder{
+          box-shadow: none!important;
+        }
+      }
+    </style>
+
+    <script>
+
+function SetAge(dateString) {
+    const today = new Date();
+    const birthDate = new Date(dateString);
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDifference = today.getMonth() - birthDate.getMonth();
+
+    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    var span = document.getElementById('spanAge');
+    span.innerText = age;
+}
+
+</script>
+
+
+  </head>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:800px;">
+
+    
+  <div class="w3-row-padding">
+
+      <div class="w3-container w3-card w3-white w3-padding-24  noPrintBorder">
+      
+       
+        <div class="w3-cell-row">
+    
+            <div class="w3-container  w3-cell w3-mobile">
+  <h5>Bureau of Immigration</h5>
+                <i class="fa fa-user fa-fw w3-hover-text-black w3-large w3-margin-right"></i> Ariane Cedric "kikz" Cabang<br>
+                <i class="fa fa-black-tie fa-fw w3-hover-text-black w3-large w3-margin-right"></i> Information Systems Analyst II<br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-large w3-margin-right"></i> 02 8-527-3310<br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-large w3-margin-right"></i> cedric.cabang@immigration.gov.ph<br>
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-large w3-margin-right"></i> Magallanes Drive, Intramuros, Manila, Philippines 1002<br>
+            </div>
+            <br class="w3-hide-medium w3-hide-large">
+            <div class="w3-container  w3-cell w3-mobile">
+              <div class="w3-center">
+                <img src="wwwroot/images/bc-work-qr.png" class="w3-image " title="qrcode" >
+              </div>
+            </div>
+            
+           
+          </div>
+
+
+        
+      </div>
+
+      
+
+  </div>
+
+</div>
+
+
+
+
+</body>
+</html>
